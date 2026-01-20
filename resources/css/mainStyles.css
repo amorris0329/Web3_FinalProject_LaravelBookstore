@@ -1,0 +1,136 @@
+:root {
+  --scriptMainColor: #704214;
+  --scriptMainFont: "Rosarivo", serif;
+  --scriptSpecialFont: "Grenze Gotisch", serif;
+  --auto: auto;
+}
+
+
+.mainTitle {
+  font-size: x-large;
+  width: 50rem;
+  font-weight: bold;
+}
+
+header {
+  line-height: 1.5;
+  max-height: 100vh;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.nora {
+  width: 50%;
+  height: 50%
+}
+
+.normalText {
+    font-size: 1.25rem;
+}
+
+nav a.router-link-exact-active {
+  color: rgba(235, 235, 235, 0.64);
+}
+
+nav a.router-link-exact-active:hover {
+  background-color: transparent;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px solid rgba(84, 84, 84, 0.48);
+}
+
+nav a:first-of-type {
+  border: 0;
+}
+
+.nav-link {
+  font-family: var(--scriptSpecialFont);
+}
+
+body {
+  color: var(--scriptMainColor);
+  background-color: #F2E5B5 !important;
+  font-family: var(--scriptMainFont);
+}
+
+.header {
+  line-height: 1.5;
+  max-height: 100vh;
+}
+
+.header, .footer{
+  background-color: #D4AF37;
+  color: var(--scriptMainColor);
+  font-family: var(--scriptSpecialFont);
+}
+
+#about {
+  color: var(--scriptMainColor);
+  font-size: 50px;
+  border-bottom: 5px solid var(--scriptMainColor);
+}
+
+h1 {
+  font-family: var(--scriptSpecialFont);
+  border-bottom: 3px solid var(--scriptMainColor);
+  font-size: 3rem;
+  text-align: center;
+  color: var(--scriptMainColor);
+}
+
+.giveBorder {
+  border-bottom: 5px solid var(--scriptMainColor);
+}
+
+.img-fluid {
+  margin-left: var(--auto);
+              margin-right: var(--auto);
+              display: block;
+          }
+
+          .normalText {
+              font-size: 1rem;
+          }
+
+          h5 {
+              font-size: 1.5rem;
+          }
+
+          input, textarea {
+            background-color: white;
+            width: 50%;
+          }
+
+          
+
+          @media screen and (min-width: 1200px) {
+              .normalText {
+                  font-size: 1.7rem;
+              }
+          }
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    place-items: center;
+    padding-right: calc(var(--section-gap) / 2);
+  }
+
+  .logo {
+    margin: 0 2rem 0 0;
+  }
+
+  header .wrapper {
+    display: flex;
+    place-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+
+}
